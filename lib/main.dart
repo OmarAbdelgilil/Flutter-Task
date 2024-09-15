@@ -1,7 +1,9 @@
+import 'package:fake_products/core/service_locator.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
+  setupLocator();
 }
 
 class MyApp extends StatelessWidget {
