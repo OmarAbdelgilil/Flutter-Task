@@ -1,8 +1,12 @@
 import 'package:fake_products/core/service_locator.dart';
 import 'package:fake_products/presentation/views/screens/products_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+    statusBarColor: Colors.transparent, // transparent status bar
+  ));
   runApp(const MyApp());
   setupLocator();
 }
