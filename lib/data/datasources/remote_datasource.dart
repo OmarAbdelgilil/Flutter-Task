@@ -10,9 +10,9 @@ class RemoteDataSource {
 
     if (response.statusCode == 200) {
       List jsonResponse = json.decode(response.body);
-      return jsonResponse.map((user) => Product.fromJson(user)).toList();
+      return jsonResponse.map((product) => Product.fromJson(product)).toList();
     } else {
-      throw Exception('Failed to load users');
+      throw Exception('Failed to load Products');
     }
   }
 }
